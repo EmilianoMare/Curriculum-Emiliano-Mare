@@ -3,157 +3,577 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="CV de David Emiliano Mare, desarrollador de software orientado a C#, .NET, ASP.NET Core y SQL Server.">
+
+    <meta name="author" content="David Emiliano Mare">
+
+    <title>David Emiliano Mare | Desarrollador .NET Junior</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Iconos Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <title>Emiliano Mare</title>
 </head>
+
 
 <body>
 
-    <!-- Sección de navegación interna -->
-    <div id="inner-nav"></div>
+    <main class="cv">
 
-    <!-- Contenedor principal -->
-    <div id="container">
+        <!-- =========================
+             COLUMNA IZQUIERDA
+        ========================== -->
 
-        <!-- Sección de perfil -->
-        <div id="profile">
+        <aside class="sidebar">
 
-            <!-- Imagen de perfil -->
-            <div id="image">
-                <img id="profile-photo" src="https://i.postimg.cc/kBHvBfRd/Whats-App-Image-2024-09-09-at-13-48-09.jpg" alt="Imagen de Perfil">
-                <a href="https://raw.githubusercontent.com/EmilianoMare/Curriculum-Emiliano-Mare/main/Foto/Emi.jpg">
-                    <i class="fas fa-pen stroke-transparent"></i>
+            <!-- Foto -->
+            <div class="profile-image">
+                <img
+                    src="https://i.postimg.cc/kBHvBfRd/Whats-App-Image-2024-09-09-at-13-48-09.jpg"
+                    alt="Foto de David Emiliano Mare">
+            </div>
+
+
+            <!-- Información personal -->
+            <div class="sidebar-section">
+
+                <h2>Contacto</h2>
+
+                <a
+                    class="contact-item"
+                    href="mailto:emilianomare2997@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>
+                        emilianomare2997@gmail.com
+                    </span>
+
                 </a>
+
+
+                <a
+                    class="contact-item"
+                    href="tel:+543572614215">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        +54 9 3572 61-4215
+                    </span>
+
+                </a>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Pilar, Córdoba, Argentina
+                    </span>
+
+                </div>
+
             </div>
 
-            <!-- Nombre y correo electrónico -->
-            <p id="name">David Emiliano Mare<br><span id="email">emilianomare2997@gmail.com</span></p>
 
-            <!-- Designación y universidad -->
-            <p id="designation">Técnico Superior en Desarrollo de Software<br><span id="college">Pilar - Córdoba - Argentina</span></p>
+            <!-- Redes -->
+            <div class="sidebar-section">
 
-            <!-- Enlaces a redes sociales -->
-            <div id="social-links">
-                <a href="https://www.linkedin.com/in/emiliano-mare-498095236/"><i class="fab fa-linkedin stroke-transparent"></i></a>
-                <a href="https://github.com/EmilianoMare"><i class="fab fa-github stroke-transparent"></i></a>
+                <h2>Perfiles</h2>
+
+                <a
+                    class="contact-item"
+                    href="https://www.linkedin.com/in/emiliano-mare-498095236/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="contact-item"
+                    href="https://github.com/EmilianoMare"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </a>
+
             </div>
 
-            <!-- Línea divisoria -->
-            <hr width="100%">
 
-            <!-- Sección "Acerca de mí" -->
-            <div id="about">
-                <p style="display:inline;">Acerca de</p>
-                <a href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+            <!-- Tecnologías -->
+            <div class="sidebar-section">
+
+                <h2>Stack tecnológico</h2>
+
+                <div class="skills">
+
+                    <span>C#</span>
+                    <span>.NET</span>
+                    <span>ASP.NET Core</span>
+                    <span>SQL Server</span>
+                    <span>MySQL</span>
+                    <span>REST API</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Bootstrap</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+
+                </div>
+
             </div>
 
-            <!-- Año de graduación -->
-            <p id="year-graduation">Año Esperado de Graduación<br><strong>Diciembre, 2024</strong></p>
 
-            <!-- Educación -->
-            <p id="education">Educación<br><strong>Técnico superior en desarrollo de software</strong></p>
+            <!-- Fortalezas -->
+            <div class="sidebar-section">
 
-            <!-- Más información -->
-            <p id="more-about">Más sobre mí<br><span>Soy un apasionado de la tecnología con un fuerte interés en las últimas tendencias y avances en desarrollo web y programación.
-                <br><br> Me considero responsable y comprometido con la calidad y el éxito de cada proyecto, con un enfoque en la atención al detalle y la gestión efectiva de tareas.
-                <br><br> La búsqueda constante de conocimiento es clave en mi enfoque profesional. Me dedico a aprender y mejorar continuamente para ofrecer soluciones innovadoras y mantenerme al día en un campo en evolución.</span></p>
+                <h2>Fortalezas</h2>
 
-            <!-- Teléfono -->
-            <p id="telephone">Teléfono<br><strong>+54 9 3572 61-4215</strong></p>
+                <ul class="strengths">
 
-        </div>
-
-        <!-- Sección de tarjetas de información -->
-        <div id="info-cards">
-
-            <!-- Tarjeta de experiencia laboral -->
-            <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Experiencia Laboral</p>
-                <ul>
                     <li>
-                        <p class="tags">Diseño Web<br>
-                            <span>Desarrollador Web Freelance / Diseño y desarrollo de sitios web dinámicos y visualmente atractivos utilizando WordPress. Implementación de diseños modernos y responsivos, personalización de temas y plugins, pruebas y mantenimiento continuo. Colaboración con clientes para soluciones técnicas innovadoras. <span>2021</span></span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        Resolución de problemas
                     </li>
+
+                    <li>
+                        Atención al detalle
+                    </li>
+
+                    <li>
+                        Responsabilidad
+                    </li>
+
+                    <li>
+                        Aprendizaje autónomo
+                    </li>
+
+                    <li>
+                        Orientación a soluciones
+                    </li>
+
                 </ul>
+
             </div>
 
-            <!-- Tarjeta de Habilidades Técnicas -->
-            <div class="card">
-                <p><i class="fas fa-laptop-code stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Habilidades Técnicas</p>
-                <ul>
-                    <li>
-                        <p class="tags">PHP:
-                            <br><i class="fab fa-php"></i>&nbsp;
-                            <span>Desarrollo de aplicaciones web dinámicas y seguras utilizando PHP. Experiencia en PDO para la conexión con bases de datos.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">MySQL:
-                            <br><i class="fas fa-database"></i>&nbsp;
-                            <span>Gestión y diseño de bases de datos relacionales con MySQL. Optimización de consultas SQL.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">Visual Basic .NET:
-                            <br><i class="fab fa-windows"></i>&nbsp;
-                            <span>Desarrollo de aplicaciones de escritorio con Visual Basic .NET.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">SQL Server:
-                            <br><i class="fas fa-database"></i>&nbsp;
-                            <span>Administración y optimización de bases de datos en SQL Server.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">Bootstrap:
-                            <br><i class="fab fa-bootstrap"></i>&nbsp;
-                            <span>Implementación de diseños responsivos y modernos con Bootstrap.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">HTML5:
-                            <br><i class="fab fa-html5"></i>&nbsp;
-                            <span>Desarrollo de páginas web semánticas y estructuradas con HTML5.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                    <li>
-                        <p class="tags">CSS3:
-                            <br><i class="fab fa-css3-alt"></i>&nbsp;
-                            <span>Creación de estilos web avanzados con CSS3.</span>
-                        </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                </ul>
-            </div>
+        </aside>
 
-            <!-- Tarjeta de educación -->
-            <div class="card">
-                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Educación</p>
-                <ul>
-                    <li>
-                        <p class="tags">Instituto Superior Villa del Rosario<br>
-                            <span>Técnico superior en desarrollo de software | <span>Diciembre, 2024</span></span>
+
+        <!-- =========================
+             CONTENIDO PRINCIPAL
+        ========================== -->
+
+        <section class="content">
+
+
+            <!-- Encabezado -->
+            <header class="header">
+
+                <p class="profession">
+                    DESARROLLADOR DE SOFTWARE
+                </p>
+
+                <h1>
+                    David Emiliano Mare
+                </h1>
+
+                <h3>
+                    Desarrollador .NET Junior
+                </h3>
+
+                <p class="header-description">
+                    C# · .NET · ASP.NET Core · SQL Server · APIs REST
+                </p>
+
+            </header>
+
+
+            <!-- Perfil -->
+            <section class="section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <h2>Perfil profesional</h2>
+
+                </div>
+
+                <p>
+                    Desarrollador de software orientado al ecosistema
+                    <strong>.NET</strong>, con formación en desarrollo de
+                    aplicaciones y experiencia en proyectos web y soluciones
+                    personalizadas para clientes.
+                </p>
+
+                <p>
+                    Actualmente enfocado en el desarrollo backend con
+                    <strong>C#, ASP.NET Core y SQL Server</strong>, trabajando
+                    con APIs REST, bases de datos, operaciones CRUD y
+                    arquitectura por capas.
+                </p>
+
+                <p>
+                    Busco incorporarme a un equipo de desarrollo donde pueda
+                    participar en proyectos reales, fortalecer mis conocimientos
+                    y aportar soluciones funcionales y mantenibles.
+                </p>
+
+            </section>
+
+
+            <!-- Experiencia -->
+            <section class="section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <h2>Experiencia</h2>
+
+                </div>
+
+
+                <article class="experience">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3>
+                                Desarrollador Web Freelance
+                            </h3>
+
+                            <p class="company">
+                                Desarrollo de soluciones digitales
+                            </p>
+
+                        </div>
+
+                        <span class="date">
+                            2021 — Actualidad
+                        </span>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Diseño y desarrollo de sitios web para
+                            emprendimientos y pequeñas empresas.
+                        </li>
+
+                        <li>
+                            Desarrollo y personalización de sitios con
+                            WordPress, HTML y CSS.
+                        </li>
+
+                        <li>
+                            Implementación de sitios responsive adaptados
+                            a dispositivos móviles.
+                        </li>
+
+                        <li>
+                            Desarrollo de soluciones digitales orientadas
+                            a las necesidades específicas de cada cliente.
+                        </li>
+
+                        <li>
+                            Mantenimiento, actualización y soporte de
+                            aplicaciones y sitios web.
+                        </li>
+
+                        <li>
+                            Comunicación directa con clientes para analizar
+                            requerimientos y definir soluciones.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </section>
+
+
+            <!-- Proyectos -->
+            <section class="section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2>Proyectos destacados</h2>
+
+                </div>
+
+
+                <article class="project">
+
+                    <div class="project-header">
+
+                        <h3>
+                            Sistema de gestión web
+                        </h3>
+
+                        <span>
+                            ASP.NET Core
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Aplicación web orientada a la gestión de información
+                        mediante operaciones CRUD, utilizando ASP.NET Core,
+                        SQL Server y procedimientos almacenados.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>C#</span>
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                        <span>MVC</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-header">
+
+                        <h3>
+                            Sistema de gestión para distribuidoras
+                        </h3>
+
+                        <span>
+                            Proyecto propio
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Sistema diseñado para gestionar productos, clientes,
+                        pedidos, vehículos, zonas y distribución. Incluye
+                        administración de pedidos y organización de entregas
+                        según rutas y zonas.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>SQL Server</span>
+                        <span>Web</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-header">
+
+                        <h3>
+                            Carta digital para comercios
+                        </h3>
+
+                        <span>
+                            Desarrollo web
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Soluciones web para restaurantes, panaderías y
+                        comercios, permitiendo mostrar productos, información
+                        de contacto y facilitar pedidos mediante WhatsApp.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive</span>
+                        <span>WhatsApp</span>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Formación -->
+            <section class="section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h2>Formación</h2>
+
+                </div>
+
+
+                <article class="education">
+
+                    <div>
+
+                        <h3>
+                            Técnico Superior en Desarrollo de Software
+                        </h3>
+
+                        <p>
+                            Instituto Superior Villa del Rosario
                         </p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                    </li>
-                </ul>
-            </div>
 
-        </div> <!-- Fin de la sección de tarjetas de información -->
+                    </div>
 
-    </div> <!-- Fin del contenedor principal -->
+                    <span class="date">
+                        En etapa final
+                    </span>
+
+                </article>
+
+            </section>
+
+
+            <!-- Conocimientos -->
+            <section class="section">
+
+                <div class="section-title">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <h2>Conocimientos</h2>
+
+                </div>
+
+
+                <div class="knowledge-grid">
+
+                    <div class="knowledge">
+
+                        <i class="fa-solid fa-server"></i>
+
+                        <div>
+
+                            <h3>Backend</h3>
+
+                            <p>
+                                C#, .NET, ASP.NET Core, MVC,
+                                APIs REST y arquitectura por capas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="knowledge">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <div>
+
+                            <h3>Bases de datos</h3>
+
+                            <p>
+                                SQL Server, MySQL, consultas SQL,
+                                relaciones, CRUD y procedimientos almacenados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="knowledge">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        <div>
+
+                            <h3>Desarrollo web</h3>
+
+                            <p>
+                                HTML5, CSS3, Bootstrap, diseño responsive
+                                y WordPress.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="knowledge">
+
+                        <i class="fa-brands fa-git-alt"></i>
+
+                        <div>
+
+                            <h3>Control de versiones</h3>
+
+                            <p>
+                                Git, GitHub, ramas, merges y resolución
+                                de conflictos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Footer -->
+            <footer>
+
+                <p>
+                    David Emiliano Mare · Desarrollador .NET Junior
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
 
 </body>
 
